@@ -1,0 +1,6 @@
+.packages-title{
+    text-align: center;
+    color: blueviolet;
+}.packages-container{
+    display: grid;
+}

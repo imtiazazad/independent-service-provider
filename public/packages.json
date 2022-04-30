@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "price": "400",
+        "duration": "Madivaru, Maldives 3 nights",
+        "description": "On arrival at the Male International Airport, you will get your first taste of warm Maldivian hospitality; the hotels team will welcome you at the Male International Airport and assists you for all for the speedboat check in procedures to ensure you have a smooth arrival and afterward we will proceed to your hotel.",
+        "img": "https://i.ibb.co/ssR3qtp/ishan-seefromthesky-Dt-Wyp-4-YEes-unsplash.jpg"
+    },
+    {
+        "id": 2,
+        "price": "300",
+        "duration": "Days 1 -2: New Delhi,India Days 2 - 4: Agra and the Taj Mahal, India",
+        "description": "New Delhi, India's busy, crowded capital. For an authentic experience New Delhi is not to be missed. Make your way to Agra and take a boat trip along the Yamuna River in the early hours of the morning to see the grand Taj Mahal in all its glory at sunrise.",
+        "img": "https://i.ibb.co/5vsdzzg/srinivas-kandukuri-t0d-Idyf-HHms-unsplash-1.jpg"
+    },
+    {
+        "id": 3,
+        "price": "300",
+        "duration": "DHAULAGIRI & ANNAPURNA PANORAMA TREK, Nepal 4 nights",
+        "description": "Lace up your boots, it's time for the first day of your trek! A private vehicle will pick you up from your hotel and transfer  to Kande. Here you'll meet porters and have a quick briefing. Once everyone is ready, your trek begins!",
+        "img": "https://i.ibb.co/RTjnvNg/giuseppe-mondi-xy-E1p1r-G04-U-unsplash.jpg"
+    }
+]
