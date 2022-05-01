@@ -1,13 +1,19 @@
 import React, { useRef } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
+import Social from '../Social/Social';
 
 const Login = () => {
     const emailRef = useRef('');
     const passwordRef = useRef('');
     const navigate = useNavigate();
+    const location = useLocation();
+
+    
+  let from = location.state?.from?.pathname || "/";
+  let errorElement;
 
     const [
         signInWithEmailAndPassword,
@@ -15,9 +21,16 @@ const Login = () => {
         loading,
         error,
       ] = useSignInWithEmailAndPassword(auth);
-
+      
       if(user){
-          navigate('/home');
+        navigate(from, { replace: true });
+      }
+
+      if (error) {
+        errorElement =
+          <div>
+            <p className='text-danger'>Error: {error.message}</p>
+          </div>
       }
 
     const handleSubmit = event => {
@@ -37,26 +50,19 @@ const Login = () => {
 
             <Form onSubmit={handleSubmit}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Label>Email address</Form.Label>
                     <Form.Control ref={emailRef} type="email" placeholder="Enter email" required/>
-                    <Form.Text className="text-muted">
-                        We'll never share your email with anyone else.
-                    </Form.Text>
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicPassword">
-                    <Form.Label>Password</Form.Label>
                     <Form.Control ref={passwordRef} type="password" placeholder="Password" required/>
                 </Form.Group>
-                <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                    <Form.Check type="checkbox" label="Check me out" />
-                </Form.Group>
                 <Button variant="dark" type="submit">
-                    Submit
+                Login
                 </Button>
             </Form>
-
+            {errorElement}
             <p className='mt-3'>New to TWI ? <Link to='/signup' className='text-primary text-decoration-none' onClick={navigateSignUp}>Please Sign Up</Link></p>
+            <Social></Social>
         </div>
     );
 };
