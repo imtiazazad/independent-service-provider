@@ -1,3 +1,25 @@
+# Website Name and Link
+
+Name: Trave with Imtiaz
+Live Link: (https://travel-with-imtiaz.web.app/)
+Github link: (https://github.com/programming-hero-web-course-4/independent-service-provider-imtiazazad).
+
+# Information about Website
+
+Website's different features and functionality:
+1. Used routes to avoid loading on page change
+2. Private route after login for checkout
+3. Used react firebase hook for sign in, sign up, social, forgot password, error, loading.
+4. Toast for error handling
+5. Once logged in, the sign out button appear.
+
+# Technology used
+1. React
+2. Bootstrap
+3. Reat bootstrap
+4. React router
+5. Firebase
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

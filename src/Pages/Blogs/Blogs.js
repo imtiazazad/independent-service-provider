@@ -7,7 +7,7 @@ const Blogs = () => {
             <p className='mb-4'>Authentication is the process where a user verified. On the other hand authorization is a way of verification where a user's data, files or applications has access. </p>
         
             <h3><span className='text-primary'>2. Question: </span>Why are you using firebase? What other options do you have to implement authentication?</h3>
-            <p className='mb-4'>Firebase is a safe platform from google where we could make project to add funcionality on website to sign up, sign in or join through other social account like google, facebook, github and verify with them.
+            <p className='mb-4'>Firebase is a safe platform from google which I use to make project to add funcionality on website to sign up, sign in or join through other social account like google, facebook, github and verify with them.
             Other options could be cards, retina scans, voice recognition, and fingerprints.
              </p>
 
